@@ -18,6 +18,7 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@v4
         with:
+        
           context: foosball/
           push: true
           tags: wzhang4umbc/foosball:${{github.run_number}}
